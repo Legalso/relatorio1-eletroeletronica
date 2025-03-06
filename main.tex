@@ -1,0 +1,118 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[bottom=2.0cm,top=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage[portuges]{babel}
+\usepackage{indentfirst}
+\usepackage{hyperref}  
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+\usepackage[nottoc]{tocbibind}
+\usepackage{lipsum}
+\usepackage{scalefnt}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{xcolor}
+
+\usepackage{tocloft}
+
+\begin{document}
+
+% Capa
+\begin{titlepage}
+    \begin{center}
+        \includegraphics[width=3.9cm]{imagens/LogoSENAC.png}\\[1cm]
+        \Large{\textbf{CENTRO UNIVERSITÁRIO SENAC}}\\[4cm]
+        
+        \LARGE{\textbf{RELATÓRIO DE ELETROELETRÔNICA}}\\[0.5cm]
+        \Large{EXPERIÊNCIA 1}\\[3cm]
+        
+        \large
+        CAIO PATRIOTA BARROS \\
+        LUIZ FELIPE PEREIRA ARAÚJO \\
+        MATHEUS EMANUEL RODRIGUES ARAÚJO \\
+        ANA GIULIA DE ALMEIDA ROSSINI \\
+        THIAGO RIVAS CABALLERO \\
+        
+        \vfill
+        São Paulo \\
+        \today
+    \end{center}
+\end{titlepage}
+
+% Sumário
+\newpage
+\renewcommand{\contentsname}{Sumário}
+
+\renewcommand{\cftsecleader}
+{\cftdotfill{\cftdotsep}}
+
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+\large
+
+\section{Resumo}
+De forma breve, descreve qual é o objetivo do mesmo, o que foi feito e quais foram os resultados obtidos. Embora apareça no início do relatório, usualmente é a última parte a ser escrita.
+
+\section{Introdução}
+O relatório deve apresentar os resultados obtidos de forma clara e concisa. É necessário expor cuidadosamente quais são os objetivos do trabalho realizado, os conceitos físicos necessários para a realização do experimento e como o experimento foi realizado, entre outros. O relatório tem que ser escrito de modo que um leitor seja capaz de entender e até reproduzir o trabalho a partir do conhecimento adquirido na sua leitura.
+
+Nela expõem-se as motivações do trabalho e os objetivos a serem atingidos. Apresenta uma revisão das informações existentes sobre o tema. Deve incluir uma explicação teórica mínima (não copiada de livro, mas elaborada pelos alunos) que permita a compreensão do trabalho.
+
+\begin{equation}
+    \Delta \textbf{s} = \Delta \vec{s}
+\end{equation}
+
+\section{Objetivo}
+O objetivo...
+
+\section{Materiais}
+Os materiais...
+
+\section{Metodologia}
+Deve-se descrever em detalhe a configuração experimental utilizada, os métodos empregados para a realização das medidas, incluindo a fundamentação física.
+
+Deve conter uma descrição de aspectos relevantes dos dispositivos e equipamentos utilizados, especificando suas características importantes (precisão dos instrumentos, intervalos de medição, etc). Pode-se representar esquematicamente o dispositivo empregado para a realização do experimento.
+
+\section{Resultados}
+Esta seção é a continuação natural da Introdução e do Método Experimental. Deve incluir tabelas dos dados obtidos junto com as suas incertezas e a explicação de como foram avaliadas essas incertezas. Também deve incluir a descrição de como a análise de dados foi realizada e como os resultados foram obtidos. Deverá incluir gráficos e tabelas junto com as curvas de ajuste dos dados realizados.
+
+\begin{table}[h]
+    \centering
+    \scalefont{1}
+    \begin{tabular}{cccc}
+        \hline
+        Símbolo & Prefixo & Múltiplo \\
+        \hline \hline
+        E & exa & $10^{18}$ \\
+        P & peta & $10^{15}$ \\
+        T & tera & $10^{12}$ \\
+        G & giga & $10^{9}$ \\
+        M & mega & $10^{6}$ \\
+        k & kilo & $10^{3}$ \\
+        h & hecto & $10^{2}$  \\
+        da & deca & $10^{1}$ \\
+        d & deci & $10^{-1}$ \\
+        c & centi & $10^{-2}$ \\
+        m & mili & $10^{-3}$ \\
+        $\mu$ & micro & $10^{-6}$ \\
+        n & nano & $10^{-9}$ \\
+        p & pico & $10^{-12}$ \\
+        f & femto & $10^{-15}$ \\
+        a & atto & $10^{-18}$ \\
+        \hline
+    \end{tabular}
+    \caption{Prefixos das potências de 10}
+    \label{tbl:prefixos}
+\end{table}
+
+\section{Conclusões}
+Deve conter uma discussão dos resultados obtidos à luz das hipóteses e objetivos do trabalho. A discussão do trabalho deverá ser feita de forma crítica, propondo melhorias ao trabalho realizado, tanto na metodologia empregada quanto nas propostas para ampliar o objetivo do experimento no futuro.
+
+\section{Referências}
+CRUZ, C. C. A.; MARKUS, O. Circuitos Elétricos – Corrente Contínua e Corrente Alternada. [s.l.] Saraiva Educação S.A., 2018.
+
+\end{document}
